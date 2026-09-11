@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Dillard's Social Manager",
+    "slug": "frontend",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "dillardssocial",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emergent.appdev.uml71r",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Attach job photos to Facebook posts",
+        "NSCameraUsageDescription": "Take job photos for Facebook posts"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#121316"
+      },
+      "package": "com.emergent.appdev.uml71r",
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-image.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#121316"
+        }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-secure-store",
+      "expo-web-browser",
+      "expo-status-bar",
+      "@react-native-vector-icons/ionicons",
+      "@react-native-vector-icons/material-icons",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Attach job photos to Facebook posts",
+          "cameraPermission": "Take job photos for Facebook posts"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

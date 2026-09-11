@@ -1,0 +1,80 @@
+{
+  "project_title": "Dillard's Social Manager - Field-Tech Command Center",
+  "theme": {
+    "mode": "dark",
+    "emotional_archetype": "THE PERFORMANCE PRO (Field-Tech Tactical Precision)",
+    "palette": {
+      "background_primary": "#121316",
+      "background_secondary": "#1A1C20",
+      "card_bg": "#22252A",
+      "card_border": "#2E333D",
+      "text_primary": "#F3F4F6",
+      "text_secondary": "#9CA3AF",
+      "text_muted": "#6B7280",
+      "accent_green_primary": "#22C55E",
+      "accent_green_dark": "#16A34A",
+      "accent_green_light": "#4ADE80",
+      "accent_green_glow": "rgba(34, 197, 94, 0.15)",
+      "warning_amber": "#F59E0B",
+      "danger_red": "#EF4444",
+      "info_blue": "#3B82F6",
+      "facebook_blue": "#1877F2"
+    }
+  },
+  "typography": {
+    "headline_font": "System / Sans-Serif Bold (Heavyweight Tactical)",
+    "body_font": "System / Sans-Serif Medium",
+    "mono_font": "SpaceMono-Regular / Monospace",
+    "scales": {
+      "hero_title": "text-2xl md:text-3xl font-bold tracking-tight",
+      "section_header": "text-xl md:text-2xl font-bold tracking-tight",
+      "card_title": "text-lg font-semibold",
+      "body": "text-base font-normal leading-relaxed",
+      "caption": "text-xs font-mono uppercase tracking-wider text-gray-400"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Mobile-first command center for field technicians on Android phones/tablets outdoors. High contrast, large touch targets (minimum 48px height), clean cards with solid 1px borders, clear visual status hierarchy.",
+    "touch_targets": {
+      "button_min_height": "48px",
+      "input_min_height": "48px",
+      "tab_bar_height": "64px"
+    },
+    "grid_and_containers": {
+      "card_padding": "p-4 md:p-6",
+      "card_border_radius": "rounded-xl",
+      "bottom_tab_padding": "pb-4 pt-2 px-3"
+    }
+  },
+  "components_and_features": {
+    "navigation": "Bottom tab bar navigation (Dashboard, Composer, Inbox, Leads, More) with smooth tab switching and high-contrast active icons.",
+    "dashboard_overview": "Connection status pill, quick stat bento cards (Pending Approvals, Unread Inbox, Leads, Drafts), NOVA AI Copilot quick launcher.",
+    "composer": "Guided post type selector (Before/After, Job Showcase, Maintenance Tip, Emergency Repair), notes + image attachment uploader, AI prompt builder generating 3 distinct tone variations (Professional, Local Friendly, Urgent Service).",
+    "approval_queue": "Owner approval workflow with clear status badges (Pending Approval, AI Warning Flagged, Approved, Published, Rejected). Diff preview and edit capabilities.",
+    "content_calendar": "Interactive calendar view (Month, Week, List) showing scheduled posts with channel tag, status, and publish time.",
+    "facebook_inbox": "Tabs for Comments, Mentions, and Messenger. AI sentiment classification (Lead / Customer Service / General) and suggested AI quick replies.",
+    "leads_kanban_board": "Kanban columns (New, Contacted, Estimate Sent, Job Scheduled, Completed, Closed). Quick phone call / SMS / Messenger response triggers.",
+    "media_library": "Tagged photo gallery with alt text editor, privacy warnings for customer faces/license plates, and one-tap post composer seed.",
+    "business_brain": "Editable knowledge base for AI training: Services offered, Operating hours, Service radius, FAQs, Brand voice rules, Pricing estimates.",
+    "analytics_and_settings": "Performance cards (Page Reach, Engagement Rate, Top Posts, Lead Conversions), Facebook Page token connection status, Team roles, Audit trail."
+  },
+  "image_urls": {
+    "hero_sprinkler_field": "https://images.unsplash.com/photo-1767615073776-a78f0bdf4006?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxpcnJpZ2F0aW9uJTIwc3ByaW5rbGVyJTIwcmVwYWlyJTIwZmllbGQlMjB3b3JrfGVufDB8fHx8MTc4OTEyNjQzOHww&ixlib=rb-4.1.0&q=85",
+    "service_truck": "https://images.unsplash.com/photo-1574359134132-34647f92dbbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHw0fHxsYXduJTIwY2FyZSUyMHRlY2huaWNpYW4lMjBzZXJ2aWNlJTIwdHJ1Y2t8ZW58MHx8fHwxNzg5MTI2NDM3fDA&ixlib=rb-4.1.0&q=85",
+    "lawn_tech": "https://images.unsplash.com/photo-1734303023491-db8037a21f09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxsYXduJTIwY2FyZSUyMHRlY2huaWNpYW4lMjBzZXJ2aWNlJTIwdHJ1Y2t8ZW58MHx8fHwxNzg5MTI2NDM3fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Ensure all interactive components (Buttons, Inputs, Cards, Tab Items, Action Sheets, Modals, Sliders) have explicit data-testid attributes (e.g. data-testid='composer-submit-btn', data-testid='approval-approve-button').",
+    "Maintain strict dark charcoal (#121316 / #1A1C20) background aesthetic with vibrant irrigation green (#22C55E) accents and solid card borders (#2E333D) to maximize readability under sunlight on Android devices.",
+    "Do not use generic social media designs or consumer app clones; this is a tactical B2B command center for irrigation repair business owners and field techs.",
+    "Ensure the owner approval safety check is visually prominent: posts generated by AI must require explicit approval before publishing.",
+    "All list views, kanban columns, and detail drawers should be scrollable and optimized for touch interactions."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Never use pure black #000000 or un-tinted grays. Tint neutrals with cool slate/charcoal tones.",
+    "Ensure touch targets are at least 48px in height/width for field usability.",
+    "Use distinct status badges with semantic colors (Green for Approved/Published, Amber for Pending Approval, Red for Rejected/Warning).",
+    "Include micro-feedback on press actions (scale animation or color shift).",
+    "All dynamic data should fallback gracefully to mock data when backend APIs are offline or disconnected."
+  ]
+}
